@@ -1,3 +1,2 @@
-**/*.DS_Store
-**/*.dSYM/
-**/*.out
+.DS_Store
+input.*
