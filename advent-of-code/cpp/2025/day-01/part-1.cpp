@@ -2,6 +2,9 @@
 #include <iostream>
 #include <string>
 
+#define ll long long
+#define newl '\n'
+
 using namespace std;
 
 int main() {
@@ -9,7 +12,7 @@ int main() {
   ifstream file(filename);
 
   if (!file.is_open()) {
-    cout << "error: " << filename << " does not exist\n";
+    cout << "error: " << filename << " does not exist" << newl;
     return 1;
   }
 
@@ -35,7 +38,7 @@ int main() {
       break;
     }
     default: {
-      cout << "error: unknown direction" << '\n';
+      cout << "error: unknown direction" << newl;
       return 1;
     }
     }
