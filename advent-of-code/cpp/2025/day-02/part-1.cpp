@@ -26,8 +26,8 @@ bool is_invalid(string id) {
   return true;
 }
 
-long long convert_str_long(string num) {
-  long long r = 0;
+ll convert_str_long(string num) {
+  ll r = 0;
   int len = num.length();
   for (int i = 0; i < len; i++) {
     r += (num[len - i - 1] - '0') * pow(10, i);
@@ -45,7 +45,7 @@ int main() {
   }
 
   string line;
-  long long sum = 0;
+  ll sum = 0;
 
   while (getline(file, line)) {
     string range;
@@ -59,10 +59,10 @@ int main() {
       getline(id_ss, first_str, '-');
       getline(id_ss, second_str, '-');
 
-      long long first = convert_str_long(first_str);
-      long long second = convert_str_long(second_str);
+      ll first = convert_str_long(first_str);
+      ll second = convert_str_long(second_str);
 
-      for (long long id = first; id <= second; id++) {
+      for (ll id = first; id <= second; id++) {
         if (is_invalid(to_string(id))) {
           sum += id;
         }
