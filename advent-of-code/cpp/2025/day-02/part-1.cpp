@@ -26,7 +26,7 @@ bool is_invalid(string id) {
   return true;
 }
 
-ll convert_str_long(string num) {
+ll convert_str_to_ll(string num) {
   ll r = 0;
   int len = num.length();
   for (int i = 0; i < len; i++) {
@@ -59,8 +59,8 @@ int main() {
       getline(id_ss, first_str, '-');
       getline(id_ss, second_str, '-');
 
-      ll first = convert_str_long(first_str);
-      ll second = convert_str_long(second_str);
+      ll first = convert_str_to_ll(first_str);
+      ll second = convert_str_to_ll(second_str);
 
       for (ll id = first; id <= second; id++) {
         if (is_invalid(to_string(id))) {
