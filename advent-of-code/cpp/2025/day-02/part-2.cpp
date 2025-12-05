@@ -70,7 +70,6 @@ int main() {
 
       for (ll id = first; id <= second; id++) {
         if (is_invalid(to_string(id))) {
-          // cout << "Found Invalid ID : " << id << newl;
           sum += id;
         }
       }
