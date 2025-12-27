@@ -17,7 +17,7 @@ ll convert_str_to_ll(string num) {
   return r;
 }
 
-bool merge_ranges(vector<pair<ll, ll> > &ranges) {
+bool merge_ranges(vector<pair<ll, ll>> &ranges) {
   for (int i = 0; i < ranges.size(); i++) {
     for (int j = 0; j < ranges.size(); j++) {
       if (i == j) {
@@ -52,7 +52,7 @@ int main() {
   }
 
   string line;
-  vector<pair<ll, ll> > ranges;
+  vector<pair<ll, ll>> ranges;
 
   while (getline(file, line)) {
     if (line == "") {
