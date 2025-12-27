@@ -28,7 +28,7 @@ int main() {
 
   int result = 0;
   string line;
-  vector<pair<ll, ll> > ranges;
+  vector<pair<ll, ll>> ranges;
 
   while (getline(file, line)) {
     if (line == "") {
@@ -50,7 +50,7 @@ int main() {
 
     for (int i = 0; i < ranges.size(); i++) {
       pair<ll, ll> range = ranges[i];
-      
+
       if (id >= range.first && id <= range.second) {
         result += 1;
         break;
