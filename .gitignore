@@ -1,2 +1,6 @@
 .DS_Store
 input.*
+
+# Advent of Code
+part-1
+part-2
