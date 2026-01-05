@@ -79,6 +79,8 @@ int main() {
     }
   }
 
+  // Reference: https://blog.jverkamp.com/2025/12/08/aoc-2025-day-8-point-cloudinator
+
   sort(edges.begin(), edges.end(),
        [](edge &a, edge &b) { return a.distance < b.distance; });
 

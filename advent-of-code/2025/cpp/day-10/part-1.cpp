@@ -11,6 +11,8 @@ using namespace std;
 using light = bool;
 using button = vector<int>;
 
+// Reference: https://blog.jverkamp.com/2025/12/10/aoc-2025-day-10-linear-algebranator
+
 struct machine {
   int size;
   vector<light> lights;

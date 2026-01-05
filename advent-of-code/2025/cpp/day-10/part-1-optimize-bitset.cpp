@@ -8,6 +8,8 @@
 
 using namespace std;
 
+// Source: https://github.com/NaviTheCoderboi/aoc-2025/blob/main/src/day10/part1.cpp
+
 void parse_lights(bitset<16> &lights, string &token) {
   int count = 0;
 

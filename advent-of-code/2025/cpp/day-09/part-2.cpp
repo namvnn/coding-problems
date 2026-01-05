@@ -145,6 +145,8 @@ int main() {
 
   n = poly.size();
 
+  // Reference: https://blog.jverkamp.com/2025/12/09/aoc-2025-day-9-polygoninator
+  
   for (int i = 0; i < n - 1; i++) {
     for (int j = i + 1; j < n; j++) {
       point pt1 = poly[i];

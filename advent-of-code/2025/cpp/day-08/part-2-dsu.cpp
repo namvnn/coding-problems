@@ -20,6 +20,7 @@ struct edge {
   int to;
 };
 
+// Reference: https://cp-algorithms.com/data_structures/disjoint_set_union.html
 struct disjoint_set_union {
   vector<int> parent;
 

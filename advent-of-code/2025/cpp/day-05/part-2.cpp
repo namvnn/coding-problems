@@ -17,6 +17,7 @@ ll convert_str_to_ll(string num) {
   return r;
 }
 
+// Source: https://codeshare.io/aVy838
 bool merge_ranges(vector<pair<ll, ll>> &ranges) {
   for (int i = 0; i < ranges.size(); i++) {
     for (int j = 0; j < ranges.size(); j++) {
